@@ -3,6 +3,6 @@ import {FC} from "react";
 export const Home:FC =()=>
 {
     return(
-        <>Home</>
+        <h2>Home</h2>
     );
 };

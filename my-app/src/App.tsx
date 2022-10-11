@@ -12,8 +12,9 @@ export const App:FC = () =>{
     <div>
       <Link to="posts">Posts</Link>
       <Link to="/">Home</Link>
+      
     </div>
-
+    
     <Routes>
       <Route path="posts" element={<Posts />} />
       <Route index element={<Home />} />
@@ -21,3 +22,4 @@ export const App:FC = () =>{
     </BrowserRouter>
   )
 };
+
