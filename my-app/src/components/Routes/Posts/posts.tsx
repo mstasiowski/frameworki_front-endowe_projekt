@@ -3,6 +3,8 @@ import {FC} from "react";
 export const Posts:FC =()=>
 {
     return(
-        <h2>Posts</h2>
+        <div>
+        <h1>Posts</h1>
+        </div>
     );
 };
