@@ -14,7 +14,7 @@ export const App:FC = () =>{
     <GlobalStyle />
     <BrowserRouter>
     <Layout>
-    
+    <>
     <div>
       <Link to="posts">Posts</Link>
       <Link to="/">Home</Link> 
@@ -24,6 +24,7 @@ export const App:FC = () =>{
       <Route path="posts" element={<Posts />} />
       <Route index element={<Home />} />
     </Routes>
+    </>
     </Layout>
     </BrowserRouter>
     </>
