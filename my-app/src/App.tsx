@@ -14,13 +14,13 @@ export const App:FC = () =>{
     <GlobalStyle />
     <BrowserRouter>
     <Layout>
-    <Routes>
+    
     <div>
       <Link to="posts">Posts</Link>
       <Link to="/">Home</Link> 
     </div>
     
-    
+    <Routes>
       <Route path="posts" element={<Posts />} />
       <Route index element={<Home />} />
     </Routes>
