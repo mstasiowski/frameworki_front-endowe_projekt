@@ -3,6 +3,4 @@ export const colorStack = {
     white: '#fff',
     alpaca: '#637e4b',
     brown: '#fde7d0',
-
-
 }

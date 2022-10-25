@@ -1,10 +1,13 @@
 import {FC} from 'react';
-import styled from 'styled-components';
-import {stackColor} from '../../styledHelpers/colors';
+import styled, {css} from 'styled-components';
+import { Link } from 'react-router-dom';
+import { SomeSpan } from './Components'
+
+import {colorStack} from '../../style/colorStack';
 
 
 const Wrapper = styled.div` 
- border: 10px solid ${stackColor.black};
+ border: 10px solid ${colorStack.black};
  `
  const SecondSpan = styled(SomeSpan)` 
  border: 10px solid yellow;
@@ -21,7 +24,7 @@ background: blue;
 const NewLink = styled(Link)`
 `;
 
-export const Menu: FC = () =>{
+export const TopMenu: FC = () =>{
     return(
         <Wrapper>
             <SecondSpan>jakis tekst</SecondSpan>

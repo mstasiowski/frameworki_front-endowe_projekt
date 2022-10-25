@@ -4,30 +4,22 @@ import {BrowserRouter, Routes, Route, Link} from 'react-router-dom';
 import {Home} from "./components/Routes/Home/home";
 import {Posts} from "./components/Routes/Posts/posts";
 import { GlobalStyle } from './style/global';
-import {Layout} from './components/common/layout';
+import {Layout} from './components/Common/layout';
 
 
 
-export const App:FC = () =>{
+export const App: FC = () => {
   return (
     <>
-    <GlobalStyle />
-    <BrowserRouter>
-    <Layout>
-    <>
-    <div>
-      <Link to="posts">Posts</Link>
-      <Link to="/">Home</Link> 
-    </div>
-    
-    <Routes>
-      <Route path="posts" element={<Posts />} />
-      <Route index element={<Home />} />
-    </Routes>
+      <GlobalStyle />
+      <BrowserRouter>
+        <Layout>
+          <Routes>
+            <Route index element={<Home />}></Route>
+            <Route path="posts" element={<Posts />}></Route>
+          </Routes>
+        </Layout>
+      </BrowserRouter>
     </>
-    </Layout>
-    </BrowserRouter>
-    </>
-  )
+  );
 }
-

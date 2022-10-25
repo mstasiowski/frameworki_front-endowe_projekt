@@ -1,9 +1,9 @@
 import {FC} from 'react';
 import styled from 'styled-components';
+import {Menu} from './menu';
+import {TopMenu} from './topMenu';
 
-import {TopMenu} from '../common/topMenu';
-
-const Wrapper = styled.div `
+const Wrapper = styled.div`
 width: 100%;
 height: 100vh;
 margin: 0 auto;
