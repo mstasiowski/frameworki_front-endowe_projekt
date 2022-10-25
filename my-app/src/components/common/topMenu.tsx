@@ -12,13 +12,12 @@ const Wrapper = styled.div`
  const SecondSpan = styled(SomeSpan)` 
  border: 10px solid yellow;
  `
-const ExampleDiv = styled.div<{isActive: boolean}>`
-background: yellow;
-${props => props.isActive && css`
-
-background: blue;
-}`
-
+ const ExampleDiv = styled.div<{isActive: boolean}>`
+ backgroud:yellow;
+ ${props=>props.isActive && css`
+ background:blue;
+ `}
+ `;
 
 
 const NewLink = styled(Link)`
@@ -30,7 +29,7 @@ export const TopMenu: FC = () =>{
             <SecondSpan>jakis tekst</SecondSpan>
             <ExampleDiv isActive>div</ExampleDiv>
             <ExampleDiv isActive={false}>div</ExampleDiv>
-            <link to="posts">Posts</link>
+            <Link to="posts">Posts</Link>
             <Link  to="/">Home</Link>
         </Wrapper>
     )

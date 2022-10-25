@@ -2,11 +2,11 @@ import React, {FC} from 'react';
 import {Link} from 'react-router-dom';
 import styled, {css} from 'styled-components';
 
-import { SomeSpan } from './Components'
-import {stackColor} from '../../style/colorStack'
+import { SomeSpan } from './Components';
+import {colorStack} from '../../style/colorStack';
 
 const Wrapper = styled.div`
-    border: 10px solid ${stackColor.black};
+    border: 10px solid ${colorStack.black};
 `;
 
 const SecondSpan = styled(SomeSpan)`

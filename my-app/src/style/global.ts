@@ -1,5 +1,5 @@
 import { text } from 'stream/consumers';
-import reset from 'styled-components';
+import reset from 'styled-reset';
 import {createGlobalStyle} from 'styled-components';
 
 import {colorStack} from './colorStack';
